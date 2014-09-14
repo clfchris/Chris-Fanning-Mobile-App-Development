@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="helloworld2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oK-Fu-6YU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="aId-2Q-BDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aId-2Q-BDf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="71" y="46" width="258" height="88"/>
+                                    <mask key="constraints">
+                                        <include reference="aId-2Q-BDf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="533-6J-eTX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="71" y="228" width="63" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmW-uF-ODU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-5W-Q0x">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Goodbye">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="266" y="228" width="63" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7E-2K-FJt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IXF-5W-Q0x" firstAttribute="trailing" secondItem="7oK-Fu-6YU" secondAttribute="trailing" id="3ei-wI-LGY"/>
+                            <constraint firstItem="533-6J-eTX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="228" id="Cz6-Rs-SLF"/>
+                            <constraint firstAttribute="trailing" secondItem="IXF-5W-Q0x" secondAttribute="trailing" constant="71" id="D4M-KI-Yar"/>
+                            <constraint firstItem="7oK-Fu-6YU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="46" id="SNr-3z-hJ3"/>
+                            <constraint firstItem="7oK-Fu-6YU" firstAttribute="leading" secondItem="533-6J-eTX" secondAttribute="leading" id="SZA-va-HEQ"/>
+                            <constraint firstItem="IXF-5W-Q0x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="228" id="TFA-YT-b3V"/>
+                            <constraint firstItem="533-6J-eTX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="71" id="vnn-74-JCV"/>
+                            <constraint firstAttribute="centerX" secondItem="7oK-Fu-6YU" secondAttribute="centerX" id="w4I-zG-Ncx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7oK-Fu-6YU"/>
+                                <exclude reference="533-6J-eTX"/>
+                                <exclude reference="IXF-5W-Q0x"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SNr-3z-hJ3"/>
+                                <exclude reference="SZA-va-HEQ"/>
+                                <exclude reference="w4I-zG-Ncx"/>
+                                <exclude reference="Cz6-Rs-SLF"/>
+                                <exclude reference="vnn-74-JCV"/>
+                                <exclude reference="3ei-wI-LGY"/>
+                                <exclude reference="D4M-KI-Yar"/>
+                                <exclude reference="TFA-YT-b3V"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7oK-Fu-6YU"/>
+                                <include reference="533-6J-eTX"/>
+                                <include reference="IXF-5W-Q0x"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SNr-3z-hJ3"/>
+                                <include reference="SZA-va-HEQ"/>
+                                <include reference="w4I-zG-Ncx"/>
+                                <include reference="Cz6-Rs-SLF"/>
+                                <include reference="vnn-74-JCV"/>
+                                <include reference="3ei-wI-LGY"/>
+                                <include reference="D4M-KI-Yar"/>
+                                <include reference="TFA-YT-b3V"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageText" destination="7oK-Fu-6YU" id="Rfx-UE-Rbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="489"/>
+        </scene>
+    </scenes>
+</document>
