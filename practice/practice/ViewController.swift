@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelChange: UILabel!
+    @IBAction func press(sender: UIButton) {
+        //labelChange.text = "goodbye"
+        if labelChange.text=="goodbye"{
+            labelChange.text="hello again"
+        }
+        else{
+            labelChange.text="goodbye"
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
