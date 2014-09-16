@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -32,7 +32,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="258" y="180" width="54" height="30"/>
+                                    <rect key="frame" x="258" y="167" width="54" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="choseHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0N4-yc-TWL"/>
@@ -45,18 +45,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="471" y="180" width="71" height="30"/>
+                                    <rect key="frame" x="471" y="167" width="71" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="choseHero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ff-BZ-jBf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="768px-Justice_League_International_0028" translatesAutoresizingMaskIntoConstraints="NO" id="8P8-35-lpj">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="200" width="768" height="600"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-xV-7Oj">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -84,6 +78,12 @@
                                     <rect key="frame" x="276" y="138" width="248" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="768px-Justice_League_International_0028" translatesAutoresizingMaskIntoConstraints="NO" id="8P8-35-lpj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="200" width="768" height="600"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -91,10 +91,10 @@
                                 <exclude reference="Vfm-TJ-Zcf"/>
                                 <exclude reference="4ZW-N9-Etq"/>
                                 <exclude reference="4IH-gL-3pQ"/>
-                                <exclude reference="8P8-35-lpj"/>
                                 <exclude reference="r9A-xV-7Oj"/>
                                 <exclude reference="iSR-CJ-xxE"/>
                                 <exclude reference="G0F-rV-ePF"/>
+                                <exclude reference="8P8-35-lpj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -102,10 +102,10 @@
                                 <include reference="Vfm-TJ-Zcf"/>
                                 <include reference="4ZW-N9-Etq"/>
                                 <include reference="4IH-gL-3pQ"/>
-                                <include reference="8P8-35-lpj"/>
                                 <include reference="r9A-xV-7Oj"/>
                                 <include reference="iSR-CJ-xxE"/>
                                 <include reference="G0F-rV-ePF"/>
+                                <include reference="8P8-35-lpj"/>
                             </mask>
                         </variation>
                     </view>
