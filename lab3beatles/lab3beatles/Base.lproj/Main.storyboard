@@ -31,19 +31,6 @@
                                     <rect key="frame" x="50" y="262" width="301" height="53"/>
                                 </variation>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KhY-YD-iTJ">
-                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
-                                <segments>
-                                    <segment title="Early 60s"/>
-                                    <segment title="Late 60s"/>
-                                </segments>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="370" width="169" height="29"/>
-                                </variation>
-                                <connections>
-                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="valueChanged" id="jdG-mw-w2p"/>
-                                </connections>
-                            </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wqu-k9-euF">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.070606579984313966" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,30 +77,43 @@
                                     <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="ApR-YV-qFq"/>
                                 </connections>
                             </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KhY-YD-iTJ">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="Early 60s"/>
+                                    <segment title="Late 60s"/>
+                                </segments>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="370" width="169" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="valueChanged" id="jdG-mw-w2p"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Y5L-Ho-Wfx"/>
                                 <exclude reference="Cud-Jv-Ynq"/>
-                                <exclude reference="KhY-YD-iTJ"/>
                                 <exclude reference="wqu-k9-euF"/>
                                 <exclude reference="4Qu-f8-9QG"/>
                                 <exclude reference="Pet-KS-0th"/>
                                 <exclude reference="1Gc-Wl-xjP"/>
                                 <exclude reference="cg9-QU-Uq2"/>
+                                <exclude reference="KhY-YD-iTJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Y5L-Ho-Wfx"/>
                                 <include reference="Cud-Jv-Ynq"/>
-                                <include reference="KhY-YD-iTJ"/>
                                 <include reference="wqu-k9-euF"/>
                                 <include reference="4Qu-f8-9QG"/>
                                 <include reference="Pet-KS-0th"/>
                                 <include reference="1Gc-Wl-xjP"/>
                                 <include reference="cg9-QU-Uq2"/>
+                                <include reference="KhY-YD-iTJ"/>
                             </mask>
                         </variation>
                     </view>
