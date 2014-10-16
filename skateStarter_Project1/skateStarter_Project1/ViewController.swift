@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if age<=5 && age>0 {
                 ageLabel.text="Aren't you a little young to skate?"
             }
-            
             else {
                 ageLabel.text="You are at the perfect age to skate!"
             }
