@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="844" y="474"/>
         </scene>
-        <!--Item-->
+        <!--Artist-->
         <scene sceneID="xfj-uf-8WP">
             <objects>
                 <viewController id="0Jk-tW-50T" customClass="FourthViewController" customModule="lab6Music" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                             <constraint firstItem="h5Z-GB-ied" firstAttribute="centerX" secondItem="gNU-mt-taD" secondAttribute="centerX" id="x9X-1Z-n2d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="u1l-PV-Ump"/>
+                    <tabBarItem key="tabBarItem" title="Artist" image="squiggle" id="u1l-PV-Ump"/>
                     <connections>
                         <outlet property="artistPicker" destination="h5Z-GB-ied" id="Dgj-xb-MeT"/>
                         <outlet property="choiceLabel" destination="gNU-mt-taD" id="7L4-hs-RtU"/>
@@ -301,6 +301,7 @@
     <resources>
         <image name="atom" width="26" height="28"/>
         <image name="shuffle" width="27" height="19"/>
+        <image name="squiggle" width="32" height="16"/>
         <image name="wand" width="28" height="28"/>
     </resources>
 </document>

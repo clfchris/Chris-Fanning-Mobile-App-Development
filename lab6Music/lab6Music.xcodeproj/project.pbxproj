@@ -15,8 +15,8 @@
 		4F4FD32519FF4740004DE468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FD32319FF4740004DE468 /* LaunchScreen.xib */; };
 		4F4FD33119FF4741004DE468 /* lab6MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FD33019FF4741004DE468 /* lab6MusicTests.swift */; };
 		4F4FD33B19FF6549004DE468 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FD33A19FF6549004DE468 /* ThirdViewController.swift */; };
-		4F5C33C51A00A11A00336AC0 /* artistalbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C33C41A00A11A00336AC0 /* artistalbums.plist */; };
 		4F5C33C71A00B7E300336AC0 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C33C61A00B7E300336AC0 /* FourthViewController.swift */; };
+		4F5C33C91A00CBC800336AC0 /* artistalbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C33C81A00CBC800336AC0 /* artistalbums.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		4F4FD32F19FF4740004DE468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4FD33019FF4741004DE468 /* lab6MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab6MusicTests.swift; sourceTree = "<group>"; };
 		4F4FD33A19FF6549004DE468 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		4F5C33C41A00A11A00336AC0 /* artistalbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = artistalbums.plist; path = ../../artistalbums.plist; sourceTree = "<group>"; };
 		4F5C33C61A00B7E300336AC0 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		4F5C33C81A00CBC800336AC0 /* artistalbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artistalbums.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 		4F4FD31619FF4740004DE468 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F5C33C81A00CBC800336AC0 /* artistalbums.plist */,
 				4F4FD31719FF4740004DE468 /* Info.plist */,
-				4F5C33C41A00A11A00336AC0 /* artistalbums.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				4F4FD32019FF4740004DE468 /* Main.storyboard in Resources */,
 				4F4FD32519FF4740004DE468 /* LaunchScreen.xib in Resources */,
 				4F4FD32219FF4740004DE468 /* Images.xcassets in Resources */,
-				4F5C33C51A00A11A00336AC0 /* artistalbums.plist in Resources */,
+				4F5C33C91A00CBC800336AC0 /* artistalbums.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
