@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1EC43A1A11BE6F003DF048 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1EC4391A11BE6F003DF048 /* ThirdViewController.swift */; };
 		4F25A80B19E09D74003F3106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25A80A19E09D74003F3106 /* AppDelegate.swift */; };
 		4F25A80D19E09D74003F3106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25A80C19E09D74003F3106 /* ViewController.swift */; };
 		4F25A81019E09D74003F3106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25A80E19E09D74003F3106 /* Main.storyboard */; };
 		4F25A81219E09D74003F3106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F25A81119E09D74003F3106 /* Images.xcassets */; };
 		4F25A81519E09D75003F3106 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F25A81319E09D75003F3106 /* LaunchScreen.xib */; };
 		4F25A82119E09D75003F3106 /* skateStarter_Project1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F25A82019E09D75003F3106 /* skateStarter_Project1Tests.swift */; };
+		4F64283C1A12098000C07169 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64283B1A12098000C07169 /* TableViewController.swift */; };
+		4F64283E1A120A2D00C07169 /* skatetionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F64283D1A120A2D00C07169 /* skatetionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F1EC4391A11BE6F003DF048 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4F25A80519E09D74003F3106 /* skateStarter_Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skateStarter_Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F25A80919E09D74003F3106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F25A80A19E09D74003F3106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		4F25A81A19E09D75003F3106 /* skateStarter_Project1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skateStarter_Project1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F25A81F19E09D75003F3106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F25A82019E09D75003F3106 /* skateStarter_Project1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skateStarter_Project1Tests.swift; sourceTree = "<group>"; };
+		4F64283B1A12098000C07169 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4F64283D1A120A2D00C07169 /* skatetionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skatetionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 				4F25A80A19E09D74003F3106 /* AppDelegate.swift */,
 				4F25A80C19E09D74003F3106 /* ViewController.swift */,
 				4F25A80E19E09D74003F3106 /* Main.storyboard */,
+				4F1EC4391A11BE6F003DF048 /* ThirdViewController.swift */,
+				4F64283B1A12098000C07169 /* TableViewController.swift */,
 				4F25A81119E09D74003F3106 /* Images.xcassets */,
 				4F25A81319E09D75003F3106 /* LaunchScreen.xib */,
 				4F25A80819E09D74003F3106 /* Supporting Files */,
@@ -90,6 +98,7 @@
 		4F25A80819E09D74003F3106 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F64283D1A120A2D00C07169 /* skatetionary.plist */,
 				4F25A80919E09D74003F3106 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +203,7 @@
 			files = (
 				4F25A81019E09D74003F3106 /* Main.storyboard in Resources */,
 				4F25A81519E09D75003F3106 /* LaunchScreen.xib in Resources */,
+				4F64283E1A120A2D00C07169 /* skatetionary.plist in Resources */,
 				4F25A81219E09D74003F3106 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F25A80D19E09D74003F3106 /* ViewController.swift in Sources */,
+				4F1EC43A1A11BE6F003DF048 /* ThirdViewController.swift in Sources */,
 				4F25A80B19E09D74003F3106 /* AppDelegate.swift in Sources */,
+				4F64283C1A12098000C07169 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				4F25A82619E09D75003F3106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F25A82719E09D75003F3106 /* Build configuration list for PBXNativeTarget "skateStarter_Project1Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				4F25A82919E09D75003F3106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

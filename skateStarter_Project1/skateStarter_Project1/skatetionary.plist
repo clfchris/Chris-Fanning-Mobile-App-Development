@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Bushings - Determine maneuverability of board.</string>
+	<string>Bushing Durometer - Softness/Hardness of bushings.</string>
+	<string>Concavity - Curvature of a board across the width.</string>
+	<string>Deck - The wood part of a skateboard.</string>
+	<string>Flex - The stiffness of a deck.</string>
+	<string>Grip - Sand paper like material on deck.</string>
+	<string>Goofy - When a rider rides right foot forward.</string>
+	<string>Heel - The edge of the board where a rider&apos;s heel is.</string>
+	<string>Kick - Where the deck curves upward.</string>
+	<string>Length - How long a board is from nose to tail.</string>
+	<string>Nose - The front of a board.</string>
+	<string>Regular - When a rider rides left foot forward.</string>
+	<string>Wheel Durometer - The hardness/softness of the wheels.</string>
+	<string>Width - How wide a board is from heel to toe.</string>
+	<string>Tail - Back end of a board.</string>
+	<string>Toe -The edge of the board where a rider&apos;s toe is.</string>
+</array>
+</plist>

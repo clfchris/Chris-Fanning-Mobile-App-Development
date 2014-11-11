@@ -17,7 +17,7 @@ class ThirdViewController: UIViewController {
         var email : String
         email = "mailto:chfa5693@colorado.edu?subject=Question from music app&body=\(questionTextView.text) from \(nameField.text)\(emailField)"
         email = email.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-        UIApplication.sharedApplication().openURL(NSURL.URLWithString(email))
+        UIApplication.sharedApplication().openURL(NSURL(string: email)!)
         UIApplication.sharedApplication().sendAction("resignFirstResponder", to:
             nil, from: nil, forEvent: nil)    }
     override func viewDidLoad() {

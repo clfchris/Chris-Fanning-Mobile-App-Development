@@ -15,7 +15,7 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         let path = NSBundle.mainBundle().pathForResource("qwordswithoutu2", ofType: "plist")
         //words = NSArray(contentsOfFile: path!) as Array
-        allwords = NSDictionary(contentsOfFile: path!)
+        allwords = NSDictionary(contentsOfFile: path!)!
         letters = allwords.allKeys as [String]
         letters.sort({$0 < $1})
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
         let letter = letters[section]
         let wordsSection = allwords.objectForKey(letter) as [String]
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text=wordsSection[indexPath.row]
+        cell.textLabel.text=wordsSection[indexPath.row]
         return cell
     }
     

@@ -1,17 +1,21 @@
 //
-//  ViewController.swift
-//  scrabbleQ
+//  TableViewController.swift
+//  skateStarter_Project1
 //
-//  Created by Chris on 10/29/14.
+//  Created by Chris on 11/11/14.
 //  Copyright (c) 2014 Chris. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class TableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+
+    //required init(coder aDecoder: NSCoder) {
+    //    fatalError("init(coder:) has not been implemented")
+    //}
     var words = [String]()
     override func viewDidLoad() {
-        let path = NSBundle.mainBundle().pathForResource("qwordswithoutu1", ofType: "plist")
+        let path = NSBundle.mainBundle().pathForResource("skatetionary", ofType: "plist")
         words = NSArray(contentsOfFile: path!) as Array
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,19 +31,12 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let alert = UIAlertController(title: "Row selected", message: "You selected \(words[indexPath.row])", preferredStyle: UIAlertControllerStyle.Alert)
-        let okaction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-        alert.addAction(okaction)
-        self.presentViewController(alert, animated: true, completion: nil)
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
-    }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-

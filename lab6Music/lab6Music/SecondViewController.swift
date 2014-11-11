@@ -14,8 +14,8 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var musicSpinner: UIActivityIndicatorView!
     
     func loadWebPage(urlString: String){
-        let url = NSURL.URLWithString(urlString)
-        let request = NSURLRequest(URL: url)
+        let url = NSURL(string: urlString)
+        let request = NSURLRequest(URL: url!)
         musicWebView.loadRequest(request)
     }
     

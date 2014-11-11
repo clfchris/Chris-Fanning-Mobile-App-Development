@@ -23,7 +23,7 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         //use a NSBundle object of the directory for our application to retrieve the pathname of artistalbums.plist
         let path = NSBundle.mainBundle().pathForResource("artistalbums", ofType: "plist")
         //loads the contents of the plist file into the artistAlbums NSDictionary
-        artistAlbums = NSDictionary(contentsOfFile:path!)
+        artistAlbums = NSDictionary(contentsOfFile:path!)!
         //creates a String Array of all the artists which the NSDictionary has stored as the keys
         artists = artistAlbums.allKeys as [String]
         //get the artist at index 0
