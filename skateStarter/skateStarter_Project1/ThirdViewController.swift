@@ -4,7 +4,8 @@
 //
 //  Created by Chris on 11/10/14.
 //  Copyright (c) 2014 Chris. All rights reserved.
-//
+//  This application only supports portrait mode because I wanted to support all deveices, meaning iphones and ipads.
+//  Running them in landscape would cut off too much data to fix. Portrait shows the most information the user needs to see. Also instead of implementing a plist with different brands of skateboards, I found that the app woul be more usefull if I implemented a small plist as a dictionary of terms.
 
 import UIKit
 
