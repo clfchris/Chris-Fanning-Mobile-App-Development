@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CEFC5AF8-C0F1-4D8C-ACBA-50A754324A89</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lab10Animations</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19EA911BAD169F78A680FED27723C35D63B9273E</key>
+		<string>https://github.com/clfchris/Chris-Fanning-Mobile-App-Development.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lab10Animations/lab10Animations.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19EA911BAD169F78A680FED27723C35D63B9273E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/clfchris/Chris-Fanning-Mobile-App-Development.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19EA911BAD169F78A680FED27723C35D63B9273E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19EA911BAD169F78A680FED27723C35D63B9273E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Chris-Fanning-Mobile-App-Development</string>
+		</dict>
+	</array>
+</dict>
+</plist>
