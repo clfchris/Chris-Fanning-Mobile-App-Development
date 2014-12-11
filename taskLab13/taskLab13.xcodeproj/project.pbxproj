@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F08AEDB1A3A02A6009113AE /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F08AEDA1A3A02A6009113AE /* Archive.swift */; };
 		4F5F1F851A1E520700F3A6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F1F841A1E520700F3A6A5 /* AppDelegate.swift */; };
 		4F5F1F871A1E520700F3A6A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F1F861A1E520700F3A6A5 /* ViewController.swift */; };
 		4F5F1F8A1A1E520700F3A6A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5F1F881A1E520700F3A6A5 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F08AEDA1A3A02A6009113AE /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
 		4F5F1F7F1A1E520700F3A6A5 /* taskLab13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskLab13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5F1F831A1E520700F3A6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F5F1F841A1E520700F3A6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5F1F841A1E520700F3A6A5 /* AppDelegate.swift */,
+				4F08AEDA1A3A02A6009113AE /* Archive.swift */,
 				4F5F1F861A1E520700F3A6A5 /* ViewController.swift */,
 				4F5F1F881A1E520700F3A6A5 /* Main.storyboard */,
 				4F5F1FA41A1E534500F3A6A5 /* DataManager.swift */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F08AEDB1A3A02A6009113AE /* Archive.swift in Sources */,
 				4F5F1FA71A1E547800F3A6A5 /* task.swift in Sources */,
 				4F5F1F871A1E520700F3A6A5 /* ViewController.swift in Sources */,
 				4F5F1FA51A1E534500F3A6A5 /* DataManager.swift in Sources */,
@@ -415,6 +419,7 @@
 				4F5F1FA01A1E520800F3A6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F5F1FA11A1E520800F3A6A5 /* Build configuration list for PBXNativeTarget "taskLab13Tests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				4F5F1FA31A1E520800F3A6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

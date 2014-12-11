@@ -16,10 +16,10 @@ class task : NSObject, NSCoding{
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(tasks[0], forKey: "Item1")
-        aCoder.encodeObject(tasks[1], forKey: "Item2")
-        aCoder.encodeObject(tasks[2], forKey: "Item3")
-        aCoder.encodeObject(tasks[3], forKey: "Item4")
+        aCoder.encodeObject(tasks[0], forKey: "Task1")
+        aCoder.encodeObject(tasks[1], forKey: "Task2")
+        aCoder.encodeObject(tasks[2], forKey: "Task3")
+        aCoder.encodeObject(tasks[3], forKey: "Task4")
     }
     
     required init(coder aDecoder: NSCoder) {

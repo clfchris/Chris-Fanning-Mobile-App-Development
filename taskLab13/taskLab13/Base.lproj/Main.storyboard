@@ -95,10 +95,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="item1" destination="68p-aT-YOO" id="WB8-U5-gO1"/>
-                        <outlet property="item2" destination="Fwd-e1-Pje" id="lQ1-Qm-NCx"/>
-                        <outlet property="item3" destination="dWT-I7-aVS" id="Txa-rI-z3P"/>
-                        <outlet property="item4" destination="5Wc-f5-Ff3" id="w4c-0q-Jau"/>
+                        <outlet property="task2" destination="Fwd-e1-Pje" id="WvA-P9-aNl"/>
+                        <outlet property="task3" destination="dWT-I7-aVS" id="n5L-ia-VOP"/>
+                        <outlet property="task4" destination="5Wc-f5-Ff3" id="TCK-vT-Np6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
