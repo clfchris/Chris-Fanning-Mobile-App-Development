@@ -1,19 +1,19 @@
 //
-//  task.swift
+//  Task.swift
 //  taskLab13
 //
-//  Created by Chris on 11/20/14.
-//  Copyright (c) 2014 Chris. All rights reserved.
+//  Created by Chris Fanning on 12/11/14.
+//  Copyright (c) 2014 Chris Fanning. All rights reserved.
 //
 
 import Foundation
 
-class task : NSObject, NSCoding{
+class Task: NSObject, NSCoding {
     var tasks = NSMutableArray()
-    
     override init() {
         super.init()
     }
+    
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(tasks[0], forKey: "Task1")
@@ -22,11 +22,11 @@ class task : NSObject, NSCoding{
         aCoder.encodeObject(tasks[3], forKey: "Task4")
     }
     
+    
     required init(coder aDecoder: NSCoder) {
         super.init()
         tasks[0] = aDecoder.decodeObjectForKey("Task1") as String
         tasks[1] = aDecoder.decodeObjectForKey("Task2") as String
         tasks[2] = aDecoder.decodeObjectForKey("Task3") as String
         tasks[3] = aDecoder.decodeObjectForKey("Task4") as String
-    }
-}
+    }}

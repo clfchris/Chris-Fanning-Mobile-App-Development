@@ -2,67 +2,55 @@
 //  ViewController.swift
 //  taskLab13
 //
-//  Created by Chris on 11/20/14.
-//  Copyright (c) 2014 Chris. All rights reserved.
-//
+//  Created by Chris Fanning on 12/11/14.
+//  Copyright (c) 2014 Chris Fanning. All rights reserved.
+//  Built on iPad for proper testing
 
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    let kFilename = "archive"
-    var dataFilePath=DataManager()
-    var taskArchive = task()
-    
-    
     @IBOutlet weak var task1: UITextField!
     @IBOutlet weak var task2: UITextField!
     @IBOutlet weak var task3: UITextField!
     @IBOutlet weak var task4: UITextField!
     
+    let kFileName = "data.plist"
+    var dataFilePath=DataManager()
+    var taskArchive = Task()
     
     override func viewDidLoad() {
-        
-        let filepath = dataFilePath.docFilePath(kFilename)
+        task1.delegate=self
+        task2.delegate=self
+        task3.delegate=self
+        task4.delegate=self
+        let filepath = dataFilePath.docFilePath(kFileName)
         let fileManager = NSFileManager.defaultManager()
-        //check to see if the file exists
         if fileManager.fileExistsAtPath(filepath!) {
-            //create an instance from the archive file
             let data = NSData(contentsOfFile: filepath!)
-            //let data: NSMutableData = NSMutableData(base64Encoding: filepath)
-            //create an instance to decode the data
             let unarchiver = NSKeyedUnarchiver(forReadingWithData: data!)
-            //read the objects from the unarchiver
-            taskArchive = unarchiver.decodeObjectForKey("Data") as task
+            taskArchive = unarchiver.decodeObjectForKey("Data") as Task
             unarchiver.finishDecoding()
-            //copy values into the text fields
             task1.text=taskArchive.tasks[0] as String
             task2.text=taskArchive.tasks[1] as String
             task3.text=taskArchive.tasks[2] as String
             task4.text=taskArchive.tasks[3] as String
         }
-        let app = UIApplication.sharedApplication() //application instance
-        //subscribe to the UIApplicationWillResignActiveNotification notification
+        let app = UIApplication.sharedApplication()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationWillResignActive:", name: "UIApplicationWillResignActiveNotification", object: app)
         super.viewDidLoad()
     }
     
-    //called when the UIApplicationWillResignActiveNotification notification is posted
-    //all notification methods take a single NSNotification instance as their argument
     func applicationWillResignActive(notification: NSNotification){
-        let filepath = dataFilePath.docFilePath(kFilename)
+        let filepath = dataFilePath.docFilePath(kFileName)
         taskArchive.tasks[0]=task1.text
         taskArchive.tasks[1]=task2.text
         taskArchive.tasks[2]=task3.text
         taskArchive.tasks[3]=task4.text
-        //create an instance to hold the encoded data
         var data = NSMutableData()
         let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
-        //archive objects
         archiver.encodeObject(taskArchive, forKey: "Data")
-        //tell the archiver we're finished encoding
         archiver.finishEncoding()
-        //write the contents of the array to our plist file
         data.writeToFile(filepath!, atomically: true)
     }
     
@@ -73,9 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
 }
-

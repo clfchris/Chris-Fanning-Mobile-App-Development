@@ -2,8 +2,8 @@
 //  taskLab13Tests.swift
 //  taskLab13Tests
 //
-//  Created by Chris on 11/20/14.
-//  Copyright (c) 2014 Chris. All rights reserved.
+//  Created by Chris Fanning on 12/11/14.
+//  Copyright (c) 2014 Chris Fanning. All rights reserved.
 //
 
 import UIKit
