@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
-
+    let viking = SKSpriteNode(imageNamed: "viking.jpg")
+    
+    @IBAction func playButton(sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
